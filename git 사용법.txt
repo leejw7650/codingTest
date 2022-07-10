@@ -1,3 +1,9 @@
+# 처음 한번만 실행
+git config --global user.name "사용자 이름"
+git config --global user.email "사용자 이메일"
+git config --list # 이름 이메일 확인
+
+# 파일 업로드 & 삭제
 git init # git 초기화
 git add 파일명.확장자명 # add 파일(git add . 의 경우는 해당 폴더의 모든 파일)
 git status # 해당 폴더의 변경 사항 확인
@@ -9,6 +15,5 @@ git push origin master # github 에 push 하기(master branch 로)
 # Password -> personal access tokens (비밀번호 X)
 ## Setting > Developer settings > Personal access tokens > Generate new token > repo 에만 체크 > token 복사 후 사용(메모장에 옮겨놓기 <- 이후에 화면 나가면 토큰 키 볼수 없음)
 
-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
-
-git rm 파일명.확장자명 # 파일 삭제 (전체 파일 삭제 : git rm -r *)
+git rm --cached -r 파일명.확장자명 # 파일 삭제 (전체 파일 삭제 : git rm --cached -r *) 
+### --cached 안붙이면 로컬 파일 전부 삭제됨 ###
