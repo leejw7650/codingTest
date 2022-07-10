@@ -9,6 +9,6 @@ git push origin master # github 에 push 하기(master branch 로)
 # Password -> personal access tokens (비밀번호 X)
 ## Setting > Developer settings > Personal access tokens > Generate new token > repo 에만 체크 > token 복사 후 사용(메모장에 옮겨놓기 <- 이후에 화면 나가면 토큰 키 볼수 없음)
 
-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
+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
 
 git rm 파일명.확장자명 # 파일 삭제 (전체 파일 삭제 : git rm -r *)
